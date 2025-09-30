@@ -1,6 +1,9 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #1f2937;
+  background: #ffffff;
 }
 
 a:link {
@@ -23,3 +26,37 @@ h3 {
     margin-bottom: 0.5em;
     color: #A31F34;
   }
+
+/* Chips for focus areas */
+.focus-chips { margin: 12px 0 0 0; }
+.chip {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 4px 6px 0 0;
+  font-size: 14px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #1e3a8a;
+  border: 1px solid #dbeafe;
+}
+
+/* Dark mode */
+:root[data-theme='dark'] body {
+  color: #e5e7eb;
+  background: #0b1020;
+}
+
+:root[data-theme='dark'] a:link,
+:root[data-theme='dark'] a:visited,
+:root[data-theme='dark'] a:hover {
+  color: #93c5fd;
+}
+
+:root[data-theme='dark'] .chip {
+  background: rgba(147, 197, 253, 0.12);
+  color: #c7d2fe;
+  border-color: rgba(147, 197, 253, 0.25);
+}
+
+/* Improve link hover affordance */
+a:hover { text-decoration: underline; }
