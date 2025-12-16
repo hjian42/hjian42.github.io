@@ -1,13 +1,16 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
   padding-top: 3.5rem;
-  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
   color: #1f2937;
-  background: #ffffff;
+  background: #fafaf9;
+  line-height: 1.7;
+  font-size: 17px;
 }
 
 a:link {
   color: #003399;
+  transition: color 0.2s ease;
 }
 
 a:visited {
@@ -15,17 +18,290 @@ a:visited {
 }
 
 a:hover {
-  color: #003399;
+  color: #A31F34;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
-    font-variant: small-caps;
-    font-weight: 400;
-    margin-top: 1.25em;
-    margin-bottom: 0.5em;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
     color: #A31F34;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    border-bottom: 2px solid #A31F34;
+    padding-bottom: 0.3em;
   }
+
+h4 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+h5 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+}
+
+/* Profile image */
+.profile-img {
+  max-width: 190px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e7eb;
+}
+
+.photo-caption {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* Social icons - academic style */
+.social-icons {
+  margin: 12px 0;
+}
+
+.social-icons a {
+  color: #374151;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #A31F34;
+}
+
+/* Contact section */
+.contact-section h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.email {
+  font-family: 'SF Mono', 'Consolas', monospace;
+  font-size: 0.9rem;
+  color: #374151;
+  background: #f9fafb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+/* News section - compact academic style */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1px 0;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #A31F34;
+  min-width: 85px;
+  flex-shrink: 0;
+}
+
+.news-content {
+  color: #374151;
+}
+
+/* Publication styling - refined academic style */
+.publication {
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid #e8e8e6;
+  border-left: 3px solid transparent;
+  transition: border-left-color 0.2s ease, background-color 0.2s ease;
+}
+
+.publication:hover {
+  border-left-color: #A31F34;
+  background-color: #fafaf8;
+}
+
+.publication:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  color: #1f2937;
+  font-size: 1.05rem;
+  margin-bottom: 0.0px;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin-bottom: 0.0px;
+  line-height: 1.4;
+}
+
+.pub-venue {
+  display: inline;
+  color: #A31F34;
+  font-size: 1.0rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-right: 8px;
+}
+
+.pub-links {
+  display: inline;
+}
+
+.pub-links a {
+  font-size: 0.85rem;
+  margin-right: 1px;
+  color: #003399;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.pub-links a::before {
+  content: "[";
+}
+
+.pub-links a::after {
+  content: "]";
+}
+
+.pub-note {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.0px;
+}
+
+/* Teaching section - compact */
+.teaching-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.teaching-list li {
+  padding: 0.5px 0;
+  color: #374151;
+}
+
+/* Footer */
+footer {
+  padding: 10px 0 10px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Source Serif Pro', Georgia, serif;
+}
+
+/* Wider container for academic style */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link styles in bio */
+.bio-text a {
+  text-decoration: none;
+}
+
+.bio-text a:hover {
+  text-decoration: underline;
+}
+
+/* Open Positions callout box - academic style */
+.callout-box {
+  background: #fef7f7;
+  border: 1px solid #A31F34;
+  border-left: 4px solid #A31F34;
+  color: #1f2937;
+  padding: 18px 24px;
+  border-radius: 4px;
+  margin: 20px 0 25px 0;
+}
+
+.callout-box h4 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  color: #A31F34;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.callout-box p {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.callout-box a {
+  color: #003399;
+}
+
+.callout-box a:hover {
+  text-decoration: underline;
+}
+
+/* Research areas - compact academic style */
+.research-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.research-card {
+  flex: 1 1 calc(50% - 12px);
+  min-width: 240px;
+  padding: 14px 18px;
+  background: #f8f8f6;
+  border-left: 3px solid #A31F34;
+  border-radius: 0 4px 4px 0;
+}
+
+.research-card h5 {
+  margin: 0 0 6px 0;
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.research-card p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #4b5563;
+  line-height: 1.5;
+}
 
 /* Chips for focus areas */
 .focus-chips { margin: 12px 0 0 0; }
@@ -60,3 +336,43 @@ h3 {
 
 /* Improve link hover affordance */
 a:hover { text-decoration: underline; }
+
+/* Collapsible sections - compact */
+.collapse-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f8f8f6;
+  border-left: 3px solid #A31F34;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+  border-radius: 0 4px 4px 0;
+}
+
+.collapse-toggle:hover {
+  background: #f3f4f6;
+}
+
+.collapse-toggle h5 {
+  margin: 0;
+  font-weight: 700;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.collapse-toggle .toggle-icon {
+  font-size: 0.85em;
+  color: #6b7280;
+  transition: transform 0.2s;
+}
+
+.collapse-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  padding: 0 14px 12px 18px;
+  font-size: 0.95rem;
+}
